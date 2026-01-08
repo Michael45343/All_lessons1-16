@@ -1,7 +1,7 @@
 ﻿
-
-
-//method
+//////////////////////////////
+/*
+// simple method
 int Fibo(int n) 
 {
     if (n == 1)
@@ -23,6 +23,23 @@ int Fibo(int n)
 
     return result;
 }
+*/
+//////////////////////////////
+
+
+
+
+int Fibo(int n) // Recursion
+{
+    if (n == 1)
+        return 0;
+
+    if (n == 2)
+        return 1;
+
+    return Fibo(n - 1) + Fibo(n - 2);
+}
+
 
 //checking of the method
 Console.WriteLine(Fibo(3));
